@@ -1,0 +1,17 @@
+server:
+  port: 16000
+  servlet:
+    context-path: /api
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: api
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://120.78.134.236:3306/nutritious_meal?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8&useSSL=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: Qian123#
+
+
