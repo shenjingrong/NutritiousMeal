@@ -13,5 +13,24 @@ spring:
     url: jdbc:mysql://120.78.134.236:3306/nutritious_meal?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8&useSSL=false&zeroDateTimeBehavior=convertToNull
     username: root
     password: Qian123#
+  redis:
+    host: 10.18.61.32
+    port: 6379
+    password: Redis_18@#
+    database: '13'
 
+cas:
+  login-url: http://idm-test.cnhwjt.com:31468/siam/login
+  prefix-url: http://idm-test.cnhwjt.com:31468/siam/
+  callback-url: http://localhost:16000/api/callback
+  protocol: CAS20
 
+qomolangma:
+  security:
+    enabled: true
+    clients: CasClient
+    cas:
+      login-url: http://idm-test.cnhwjt.com:31468/siam/login
+      prefix-url: http://idm-test.cnhwjt.com:31468/siam/
+      callback-url: http://localhost:16000/api/callback
+      protocol: CAS20
